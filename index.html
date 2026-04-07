@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Care.com Widget Host</title>
-
   <style>
     body {
       margin: 0;
@@ -12,23 +11,19 @@
       font-family: sans-serif;
       background: #ffffff;
     }
-    #care-widget-container {
+    iframe {
+      display: block;
       width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0;
+      height: 900px;
+      border: none;
+      overflow: hidden;
     }
   </style>
 </head>
-
 <body>
-  <div id="care-widget-container">
-    <script
-      id="load-galore-embed"
-      type="text/javascript"
-      src="https://getgalore.com/embed.js"
-      data-src="https://www.care.com/connect/recacademystl/embed?widget_id=1576&locations[]=1127493">
-    </script>
-  </div>
+  <iframe 
+    src="https://www.care.com/connect/recacademystl/embed?widget_id=1576&locations[]=1127493"
+    loading="lazy">
+  </iframe>
 </body>
 </html>
